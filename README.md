@@ -1,30 +1,42 @@
-Segmentation Dataset
+Semantic Segmentation 
 ===
 
-This repository contains a description of the DroneDeploy Segmentation Dataset and how to use it. It also contains example code to get a working segmentation model up and running quickly using a small sample dataset. See below for details of the full dataset and suggested improvement directions.
+This repository contains example code to get 3 working segmentation models up and running quickly using DroneDeploy Segmentation Dataset. The use of both supervised and unsupervised learning allows to determine which model performs better in which scenarios. 
+
+### Testing: 
+Follow these steps to run inference using the vote from unsupervised GMM model and saved Supervised Model(Resnet18, VGG16) 
+• Unzip the segmentation code.
+• Python 3 test.py 
+
+Inference will be performed on scenes and a prediction images stored in the directory: 
+‘predictions_cluster’ : GMM 
+‘predictions_resnet18’ : Resnet18 
+‘predictions_vgg16’ : VGG16 
+
 
 ![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/example.jpg)
 
-### Quickstart
+### Training
 
-Follow these steps to train a model and run inference end-to-end:
+Follow these steps to train the supervised models and run inference end-to-end:
 
 ```
-git clone https://github.com/dronedeploy/dd-ml-segmentation-benchmark.git
+git clone https://github.com/tanyajoon/dd-ml-segmentation-benchmark.git
 cd dd-ml-segmentation-benchmark
 pip3 install -r requirements.txt
 
 # optional: log in to W&B to track your experiements
 wandb login
 
-# train a Keras model
+# train and save a Keras model(you can change the model to be used in main_keras)
 python3 main_keras.py
 
-# train a Fastai model
-python3 main_fastai.py
+
 ```
 
-This will download the sample dataset and begin training a model. You can monitor training performance on [Weights & Biases](https://www.wandb.com/). Once training is complete, inference will be performed on all test scenes and a number of prediction images with names like `123123_ABCABC-prediction.png` will be created in the `wandb` directory. After the images are created they will be scored, and those scores stored in the `predictions` directory. Here's what a prediction looks like - not bad for 50 lines of code, but there is a lot of room for improvement:
+This will download the sample dataset and begin training a model. You can monitor training performance on [Weights & Biases](https://www.wandb.com/). Once training is complete, inference will be performed on all test scenes and a number of prediction images with names like `123123_ABCABC-prediction.png` will be created in the `wandb` directory. After the images are created they will be scored, and those scores stored in the `predictions` directory. 
+
+Here's what a prediction looks like - not bad for 50 lines of code, but there is a lot of room for improvement:
 
 ![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/out.gif)
 
