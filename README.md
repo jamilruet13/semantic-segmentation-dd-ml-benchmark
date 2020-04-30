@@ -54,7 +54,7 @@ To use a dataset for training, it must first be converted to chips (see `images2
 
 Here is an example of one of the labelled scenes:
 
-![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/15efe45820_D95DF0B1F4INSPIRE-label.png)
+![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/IMAGE.png)
 
 Each color represents a different class.
 
