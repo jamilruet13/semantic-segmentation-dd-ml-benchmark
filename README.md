@@ -5,6 +5,7 @@ This repository contains example code to get 3 working segmentation models up an
 
 ### Testing: 
 Follow these steps to run inference using the vote from unsupervised GMM model and saved Supervised Model(Resnet18, VGG16) 
+```
 • Unzip the segmentation code.
 • Python 3 test.py 
 
@@ -12,7 +13,7 @@ Inference will be performed on scenes and a prediction images stored in the dire
 ‘predictions_cluster’ : GMM 
 ‘predictions_resnet18’ : Resnet18 
 ‘predictions_vgg16’ : VGG16 
-
+```
 
 ![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/example.jpg)
 
