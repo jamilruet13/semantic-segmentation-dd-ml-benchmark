@@ -16,7 +16,8 @@ Inference will be performed on scenes and a prediction images stored in the dire
 ‘predictions_vgg16’ : VGG16 
 ```
 
-![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/example.jpg)
+![Example](https://github.com/tanyajoon/dd-ml-segmentation-benchmark/blob/master/img/image.png)
+
 
 ### Training
 
@@ -38,9 +39,6 @@ python3 main_keras.py
 
 This will download the sample dataset and begin training a model. You can monitor training performance on [Weights & Biases](https://www.wandb.com/). Once training is complete, inference will be performed on all test scenes and a number of prediction images with names like `123123_ABCABC-prediction.png` will be created in the `wandb` directory. After the images are created they will be scored, and those scores stored in the `predictions` directory. 
 
-Here's what a prediction looks like - not bad for 50 lines of code, but there is a lot of room for improvement:
-
-![Example](https://github.com/dronedeploy/dd-ml-segmentation-benchmark/raw/master/img/out.gif)
 
 ### Dataset Details
 
@@ -54,8 +52,7 @@ To use a dataset for training, it must first be converted to chips (see `images2
 
 Here is an example of one of the labelled scenes:
 
-![Example](https://github.com/tanyajoon/dd-ml-segmentation-benchmark/blob/master/img/image.png)
-
+![Example](https://github.com/tanyajoon/dd-ml-segmentation-benchmark/blob/master/img/1.jpg)
 Each color represents a different class.
 
 Color (Blue, Green, Red) to Class Name:
