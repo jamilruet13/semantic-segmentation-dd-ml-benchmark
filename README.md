@@ -54,7 +54,7 @@ To use a dataset for training, it must first be converted to chips (see `images2
 
 Here is an example of one of the labelled scenes:
 
-![Example](https://github.com/tanyajoon/dd-ml-segmentation-benchmark/raw/master/img/IMAGE.png)
+![Example](https://github.com/tanyajoon/dd-ml-segmentation-benchmark/blob/master/img/image.png)
 
 Each color represents a different class.
 
