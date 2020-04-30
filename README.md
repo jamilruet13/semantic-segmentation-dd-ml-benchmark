@@ -74,9 +74,8 @@ Color (Blue, Green, Red) to Class Name:
 ### Possible Improvements
 ----
 The sample implementation is very basic and there is immediate opportunity to experiment with:
-- Data augmentation (`datasets_keras.py`, `datasets_fastai.py`)
-- Hyperparameters (`train_keras.py`, `train_fastai.py`)
-- Post-processing (`inference_keras.py`, `inference_fastai.py`)
+- Data augmentation (`datasets_keras.py`)
+- Hyperparameters and Model architecture(`train_keras.py`)
+- Post-processing (`inference_keras.py`)
 - Chip size (`images2chips.py`)
-- Model architecture (`train_keras.py`, `train_fastai.py`)
 - Elevation tiles are not currently used at all (`images2chips.py`)
