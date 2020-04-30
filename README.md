@@ -8,8 +8,9 @@ Follow these steps to run inference using the vote from unsupervised GMM model a
 ```
 • Unzip the segmentation code.
 • Python 3 test.py 
-
+```
 Inference will be performed on scenes and a prediction images stored in the directory: 
+```
 ‘predictions_cluster’ : GMM 
 ‘predictions_resnet18’ : Resnet18 
 ‘predictions_vgg16’ : VGG16 
